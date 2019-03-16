@@ -1,4 +1,4 @@
-const getLargestContiguousNodesIterative = (
+const getLargestContiguousNodesIterativeRandom = (
 	nodes,
 ) => {
 	let contiguousIds = []
@@ -88,4 +88,4 @@ const getLargestContiguousNodesIterative = (
 	return largestContiguousIds
 }
 
-module.exports = getLargestContiguousNodesIterative
+module.exports = getLargestContiguousNodesIterativeRandom

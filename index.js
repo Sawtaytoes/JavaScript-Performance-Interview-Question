@@ -1,11 +1,11 @@
 const addAdjacencies = require('./addAdjacencies')
 const generateNodes = require('./generateNodes')
-const getLargestContiguousNodesIterative = require('./getLargestContiguousNodesIterative')
+const getLargestContiguousNodesIterativeRandom = require('./getLargestContiguousNodesIterativeRandom')
+const getLargestContiguousNodesIterativeSequential = require('./getLargestContiguousNodesIterativeSequential')
 const getLargestContiguousNodesObservableConcurrent = require('./getLargestContiguousNodesObservableConcurrent')
 const getLargestContiguousNodesObservableIterative = require('./getLargestContiguousNodesObservableIterative')
-const getLargestContiguousNodesObservableSequential = require('./getLargestContiguousNodesObservableSequential')
+const getLargestContiguousNodesObservableRandom = require('./getLargestContiguousNodesObservableRandom')
 const getLargestContiguousNodesRecursive = require('./getLargestContiguousNodesRecursive')
-const getLargestContiguousNodesSequentialIterative = require('./getLargestContiguousNodesSequentialIterative')
 
 const nodes = (
 	addAdjacencies(
@@ -29,7 +29,7 @@ console.log('length', largestContiguousNodesRecursive.length || 1)
 
 console.time('Iterative')
 const largestContiguousNodesIterative = (
-	getLargestContiguousNodesIterative(
+	getLargestContiguousNodesIterativeRandom(
 		nodes,
 	)
 )
@@ -38,14 +38,14 @@ console.log('length', largestContiguousNodesIterative.length || 1)
 
 console.time('Sequential Iterative')
 const largestContiguousNodesSequentialIterative = (
-	getLargestContiguousNodesSequentialIterative(
+	getLargestContiguousNodesIterativeSequential(
 		nodes,
 	)
 )
 console.timeEnd('Sequential Iterative')
 console.log('size', largestContiguousNodesSequentialIterative.size || 1)
 
-getLargestContiguousNodesObservableSequential(
+getLargestContiguousNodesObservableRandom(
 	nodes,
 )
 .subscribe(() => {

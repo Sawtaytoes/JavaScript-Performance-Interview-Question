@@ -1,4 +1,4 @@
-const getLargestContiguousNodesSequentialIterative = (
+const getLargestContiguousNodesIterativeSequential = (
 	nodes,
 ) => (
 	nodes
@@ -83,7 +83,7 @@ const getLargestContiguousNodesSequentialIterative = (
 	))
 )
 
-module.exports = getLargestContiguousNodesSequentialIterative
+module.exports = getLargestContiguousNodesIterativeSequential
 
 
 // reduce, add ID to array. If you're nearby any ids that are already listed, then add your ID to that array.
