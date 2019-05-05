@@ -62,8 +62,7 @@ const getLargestContiguousNodesIterativeRandom = (
 		}
 
 		if (
-			queuedIds
-			.length === 0
+			queuedIds.length === 0
 			&& remainingNodesIndex === -1
 		) {
 			if (
