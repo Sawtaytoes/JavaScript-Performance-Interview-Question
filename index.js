@@ -3,7 +3,7 @@ const generateNodes = require('./generateNodes')
 const getLargestContiguousNodesIterativeRandom = require('./getLargestContiguousNodesIterativeRandom')
 const getLargestContiguousNodesIterativeSequential = require('./getLargestContiguousNodesIterativeSequential')
 const getLargestContiguousNodesObservableConcurrent = require('./getLargestContiguousNodesObservableConcurrent')
-const getLargestContiguousNodesObservableIterative = require('./getLargestContiguousNodesObservableIterative')
+const getLargestContiguousNodesObservableSequential = require('./getLargestContiguousNodesObservableSequential')
 const getLargestContiguousNodesObservableRandom = require('./getLargestContiguousNodesObservableRandom')
 const getLargestContiguousNodesRecursive = require('./getLargestContiguousNodesRecursive')
 
@@ -49,7 +49,7 @@ getLargestContiguousNodesObservableRandom(
 	nodes,
 )
 .subscribe(() => {
-	getLargestContiguousNodesObservableIterative(
+	getLargestContiguousNodesObservableSequential(
 		nodes,
 	)
 	.subscribe(() => {
