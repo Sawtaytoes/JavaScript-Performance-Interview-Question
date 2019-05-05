@@ -1,0 +1,9 @@
+{
+  "private": true,
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "rxjs": "^6.5.1"
+  }
+}
